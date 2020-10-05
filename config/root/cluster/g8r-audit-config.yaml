@@ -5,6 +5,6 @@ metadata:
   namespace: "gatekeeper-system"
 spec:
   match:
-  - excludedNamespaces: ["kube-system", "gatekeeper-system", "config-management-system"]
+  - excludedNamespaces: ["kube-system", "gatekeeper-system", "config-management-system", "resource-group-system"]
     processes: ["audit"]
 
