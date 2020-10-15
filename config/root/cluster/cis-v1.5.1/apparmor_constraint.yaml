@@ -6,7 +6,7 @@ kind: K8sPSPAppArmor
 metadata:
   name: psp-apparmor
 spec:
-  enforcementAction: dryrun # {"$kpt-set":"enforcementAction"}
+  enforcementAction: deny # {"$kpt-set":"enforcementAction"}
   match:
     kinds:
     - apiGroups: [""]

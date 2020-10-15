@@ -6,7 +6,7 @@ kind: K8sPSPProcMount
 metadata:
   name: psp-proc-mount
 spec:
-  enforcementAction: dryrun # {"$kpt-set":"enforcementAction"}
+  enforcementAction: deny # {"$kpt-set":"enforcementAction"}
   match:
     kinds:
     - apiGroups: [""]

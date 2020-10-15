@@ -6,7 +6,7 @@ kind: K8sPSPForbiddenSysctls
 metadata:
   name: psp-forbidden-sysctls
 spec:
-  enforcementAction: dryrun # {"$kpt-set":"enforcementAction"}
+  enforcementAction: deny # {"$kpt-set":"enforcementAction"}
   match:
     kinds:
     - apiGroups: [""]

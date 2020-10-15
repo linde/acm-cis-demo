@@ -6,7 +6,7 @@ kind: K8sPSPHostNetworkingPorts
 metadata:
   name: psp-host-network-ports
 spec:
-  enforcementAction: dryrun # {"$kpt-set":"enforcementAction"}
+  enforcementAction: deny # {"$kpt-set":"enforcementAction"}
   match:
     kinds:
     - apiGroups: [""]
