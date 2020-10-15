@@ -1,0 +1,21 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: cis-v1.5.1
+upstream:
+  type: git
+  git:
+    commit: f4da6f0ccd5ebf12c9baee19f66ff68ea96fb75d
+    repo: sso://team/nomos-team/policy-controller-constraint-library
+    directory: /bundles/cis-v1.5.1
+    ref: master
+packageMetadata:
+  shortDescription: CIS Benchmark Kubernetes v1.5.1
+openAPI:
+  definitions:
+    io.k8s.cli.setters.enforcementAction:
+      x-k8s-cli:
+        setter:
+          isSet: true
+          name: enforcementAction
+          value: dryrun
