@@ -9,7 +9,7 @@ spec:
   git: 
     secretType: ssh
     syncRepo: git@github.com:linde/acm-cis-demo.git
-    syncBranch: main
+    syncBranch: wp-cis
     policyDir: config/root
   policyController:
     enabled: true
