@@ -6,7 +6,7 @@ kind: K8sPSPAllowedUsers
 metadata:
   name: psp-pods-allowed-user-ranges
 spec:
-  enforcementAction: dryrun # {"$kpt-set":"enforcementAction"}
+  enforcementAction: deny # {"$kpt-set":"enforcementAction"}
   match:
     kinds:
     - apiGroups: [""]

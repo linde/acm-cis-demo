@@ -6,7 +6,7 @@ kind: K8sPSPVolumeTypes
 metadata:
   name: psp-volume-types
 spec:
-  enforcementAction: dryrun # {"$kpt-set":"enforcementAction"}
+  enforcementAction: deny # {"$kpt-set":"enforcementAction"}
   match:
     kinds:
     - apiGroups: [""]

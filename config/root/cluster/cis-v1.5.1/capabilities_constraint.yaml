@@ -6,7 +6,7 @@ kind: K8sPSPCapabilities
 metadata:
   name: capabilities-demo
 spec:
-  enforcementAction: dryrun # {"$kpt-set":"enforcementAction"}
+  enforcementAction: deny # {"$kpt-set":"enforcementAction"}
   match:
     kinds:
     - apiGroups: [""]
